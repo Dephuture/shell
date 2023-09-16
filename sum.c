@@ -5,13 +5,14 @@ int main(int ac, char **av)
 {
 	int i;
 	int sum = 0;
-	printf("ac : %d", ac);
+	printf("ac : %d\n", ac);
 	printf("av[] values\n:");
 
 	for(i = 1; i < ac; i++)
 	{
 		printf("av[%d] = %s\n", i , av[i]);
-		sum += atio(av[1]);
+		sum += atoi(av[i]);
 	}
-	return(sum);
+	printf("sum is: %d\n", sum);
+	return(0);
 }
